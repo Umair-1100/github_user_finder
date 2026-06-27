@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Github User Finder</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="github-finder">
+        <div class="container">
+          <header class="finder-header">
+            <h1>GitHub User Finder</h1>
+            <p>Search any GitHub user and explore their profile.</p>
+          </header>
+
+          <form class="github-user-form">
+            <div class="search-box">
+              <input
+                type="text"
+                id="usernameInput"
+                placeholder="Enter GitHub username..."
+              />
+              <button type="submit" id="searchBtn">
+                <i data-lucide="search"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- start empty placholder -->
+          <div class="empty-placeholder">
+            <div class="empty_icon">
+              <i data-lucide="user-round-search"></i>
+            </div>
+            <h3>Search in the input to find github user.</h3>
+          </div>
+          <!-- end empty placholder -->
+
+          <!-- start error state -->
+          <div class="error-state">
+          </div>
+          <!-- end error state -->
+
+          <!-- start loading -->
+          <div class="loading">
+            <div id="wifi-loader">
+              <svg viewBox="0 0 86 86" class="circle-outer">
+                <circle r="40" cy="43" cx="43" class="back"></circle>
+                <circle r="40" cy="43" cx="43" class="front"></circle>
+                <circle r="40" cy="43" cx="43" class="new"></circle>
+              </svg>
+              <svg viewBox="0 0 60 60" class="circle-middle">
+                <circle r="27" cy="30" cx="30" class="back"></circle>
+                <circle r="27" cy="30" cx="30" class="front"></circle>
+              </svg>
+
+              <div data-text="Loading..." class="text"></div>
+            </div>
+          </div>
+          <!-- end loading -->
+
+          <!-- start details -->
+          <div class="details">
+            <!-- start profile -->
+            <div class="profile-card">
+              <!-- image -->
+              <div class="profile-img">
+                <img src="" alt="" />
+              </div>
+
+              <!-- content -->
+              <div class="content">
+                <div class="username_joining_date">
+                  <a href="#" class="uiUsername" rel="noopener noreferrer" target="_blank">Muhammad Umair</a>
+                  <span class="joining_date">June 12, 2026</span>
+                </div>
+                <div>
+                  <h3 class="username_login">@umair-1100</h3>
+                  <p class="user_bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, atque.</p>
+                </div>
+              </div>
+            </div>
+            <!-- end profile -->
+
+            <!-- start details -->
+            <div class="content-details">
+              <div class="parent_card">
+                <!-- start card -->
+                <div class="card">
+                  <span class="repos">20</span>
+                  <h3>Repos</h3>
+                </div>
+                <!-- end card -->
+                <!-- start card -->
+                <div class="card">
+                  <span class="followers">4</span>
+                  <h3>Followers</h3>
+                </div>
+                <!-- end card -->
+                <!-- start card -->
+                <div class="card">
+                  <span class="following">0</span>
+                  <h3>Following</h3>
+                </div>
+                <!-- end card -->
+              </div>
+            </div>
+            <!-- end details -->
+            <div class="links-details">
+              <div class="link-grid">
+                <div class="link">
+                  <i data-lucide="map-pin" class="icon"></i>
+                  <span class="location"></span>
+                </div>
+                <a href="#" class="link link_href">
+                  <i data-lucide="link" class="icon"></i>
+                  <span></span>
+                </a>
+                <div class="link">
+                  <i data-lucide="building-2" class="icon"></i>
+                  <span class="company"></span>
+                </div>
+                <div class="link">
+                  <i data-lucide="user" class="icon"></i>
+                  <span class="user_type"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end details -->
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
