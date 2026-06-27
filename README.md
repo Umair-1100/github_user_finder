@@ -6,13 +6,7 @@ A modern and responsive **GitHub User Finder** built with **HTML**, **CSS**, and
 
 🔗 https://github-user-explore.netlify.app/
 
-## Preview
 
-```md
-![GitHub User Finder Preview](./public/images/image.png)
-```
-
----
 
 ## Features
 
@@ -65,11 +59,11 @@ This project helped me strengthen my understanding of:
 
 ```text
 📦 github-user-finder
-├── assets
-│   ├── css
-│   ├── js
+├── public
 │   └── images
 ├── index.html
+├── style.css
+├── app.js
 └── README.md
 ```
 
